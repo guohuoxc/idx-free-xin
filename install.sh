@@ -9,9 +9,9 @@ export UUID=$(node -e "const { v4: uuidv4 } = require('uuid'); console.log(uuidv
 echo "Generated UUID: $UUID"
 
 # --- 哪吒探针配置 ---
-export NEZHA_SERVER="z.kkkk.hidns.co:80"          # 哪吒面板域名。v1 填写形式：nezha.xxx.com:8008；v0 填写形式：nezha.xxx.com
-export NEZHA_PORT=""            # v1 哪吒不要填写这个。v0 哪吒 agent 端口，端口为 {443, 8443, 2096, 2087, 2083, 2053} 之一时开启 TLS
-export NEZHA_KEY="ZPRVZUoCu50Wz0ZiL4mSf2zZelRDh1K5"             # v1 哪吒的 NZ_CLIENT_SECRET 或 v0 哪吒 agent 密钥
+export NEZHA_SERVER="nazha.kkkk.hidns.co"          # 哪吒面板域名。v1 填写形式：nezha.xxx.com:8008；v0 填写形式：nezha.xxx.com
+export NEZHA_PORT="443"            # v1 哪吒不要填写这个。v0 哪吒 agent 端口，端口为 {443, 8443, 2096, 2087, 2083, 2053} 之一时开启 TLS
+export NEZHA_KEY="ZEE79y8zOazCJnT623"             # v1 哪吒的 NZ_CLIENT_SECRET 或 v0 哪吒 agent 密钥
 
 # --- Argo 隧道配置 ---
 export ARGO_DOMAIN="idxsss.kkkk.hidns.co"           # Argo 域名，留空即启用临时隧道
